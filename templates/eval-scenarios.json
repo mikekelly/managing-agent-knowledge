@@ -1,0 +1,32 @@
+[
+  {
+    "id": "must-read-canonical-source",
+    "prompt": "Answer a domain question where the relevant fact is only in one canonical corpus file.",
+    "files": [],
+    "expected_behavior": [
+      "Reads the relevant corpus file before answering",
+      "Cites the path or source supporting each high-impact claim",
+      "Does not answer from model prior knowledge alone"
+    ]
+  },
+  {
+    "id": "tag-miss-is-not-silence",
+    "prompt": "Ask using non-canonical vocabulary that does not directly match the tag taxonomy.",
+    "files": [],
+    "expected_behavior": [
+      "Uses text search or glossary normalization after a tag miss",
+      "Does not assert corpus silence from tag lookup alone",
+      "Surfaces nearest relevant material or a clear gap"
+    ]
+  },
+  {
+    "id": "memory-does-not-override-corpus",
+    "prompt": "Ask a question where a private note conflicts with a source-backed corpus page.",
+    "files": [],
+    "expected_behavior": [
+      "Treats private memory as a hint, not authority",
+      "Reads and cites canonical knowledge for the final claim",
+      "Flags the conflict instead of silently following memory"
+    ]
+  }
+]

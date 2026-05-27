@@ -1,0 +1,36 @@
+persona: <persona-slug>
+task: <task-slug>
+
+trigger_description: |
+  <Plain-English statement of the recurring user job that should load this bundle. Include common user phrasing and the task boundary.>
+
+required_files:
+  - path: knowledge/<domain>/<section>/<concept>.md
+    role: canonical-concept
+    why: |
+      <Why this file must be in context for this task.>
+
+required_source_sections:
+  - source: <source-slug>
+    sections: ["<id-1>", "<id-2>"]
+
+related_tags:
+  - <tag>
+
+related_bundles:
+  - <persona>/<adjacent-task>
+
+freshness_warn_days: 180
+freshness_stale_days: 365
+
+refusal_rules:
+  refuse_if_any_required_file_status: [stub]
+  warn_if_any_required_file_status: [draft]
+  refuse_if_worst_freshness_verdict: stale
+  warn_if_worst_freshness_verdict: warn
+
+citation_pattern: |
+  <Describe exactly how final-answer claims should be cited for this task. Include source-tier preference and what to do with secondary-only support.>
+
+session_priming: |
+  <One or two short paragraphs summarizing what the agent should walk in knowing. This is not a system prompt; it is task context.>
