@@ -1,14 +1,14 @@
 <overview>
-An agent knowledge corpus earns trust by saying where claims came from, when they were checked, and what the agent must do when material is stale, weakly sourced, or missing.
+An agent knowledge corpus earns reliability by saying where claims came from, when they were checked, and what the agent must do when material is stale, weakly sourced, or missing.
 </overview>
 
 <source_hierarchy>
 Define a domain-specific hierarchy. A generic pattern:
 
-1. Primary source of truth: statute, contract, code, database row, official record, source repository, signed policy, published API spec.
-2. Governing interpretation: regulator guidance, court judgment, internal approved interpretation, official implementation notes.
+1. Primary source of truth: signed policy, contract, code, database row, official record, source repository, published API spec, or maintained source document.
+2. Authoritative interpretation: official guidance, formal decision, internal approved interpretation, or implementation note.
 3. Operational guidance: approved runbook, standard operating procedure, maintained playbook.
-4. Reputable secondary source: analyst note, law-firm briefing, vendor guide, external commentary.
+4. Reputable secondary source: analyst note, vendor guide, implementation guide, external commentary.
 5. User-provided or agent-generated context: useful for framing, not authority unless separately verified.
 
 Agents should prefer the highest available tier and flag when only lower-tier support exists.
@@ -23,7 +23,7 @@ Typical behavior:
 - Warn: cite but tell the user the file is aging and may need source re-check.
 - Stale: do not rely on the corpus page alone for authoritative claims. Fetch or inspect the upstream source, refuse, or caveat depending on the domain.
 
-Thresholds should vary by risk. A sanctions, security, pricing, or regulatory-change page may decay in days. A stable historical explainer may decay in years.
+Thresholds should vary by risk. A security, pricing, compliance-change, or incident-response page may decay in days. A stable historical explainer may decay in years.
 </freshness_contract>
 
 <citation_rules>

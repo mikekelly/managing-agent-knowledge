@@ -16,9 +16,9 @@ Read these knowledge files now:
 
 3. **Choose content layers.** Define the stable doctrinal/reference layer, synthesis or comparison surfaces, frontier/change-tracking pages, history/gaps pages, and use-case/operator pages only where the domain needs them.
 
-4. **Design the file model.** Pick a root such as `knowledge/`, domain or tenant subdirectories, section indexes, concept files, source files, use-case files, and synthesis pages. Keep the design predictable enough that an agent can infer parallel paths.
+4. **Design the file model.** Pick a root such as `knowledge/`, domain or collection subdirectories, section indexes, concept files, source files, use-case files, and synthesis pages. Keep the design predictable enough that an agent can infer parallel paths.
 
-5. **Design metadata.** Define required frontmatter fields, status values, freshness dates, source records, tags, see-also links, and any domain-specific fields such as articles, clauses, product ids, regions, owners, or risk levels.
+5. **Design metadata.** Define required frontmatter fields, status values, freshness dates, source records, tags, see-also links, and any domain-specific fields such as sections, clauses, product ids, regions, owners, or risk levels.
 
 6. **Design navigation.** Specify the folder taxonomy, closed tag taxonomy, inclusion-link convention, index-page responsibilities, cross-linking style, and rules for asserting corpus silence.
 

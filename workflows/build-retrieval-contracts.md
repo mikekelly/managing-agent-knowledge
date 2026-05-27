@@ -11,9 +11,9 @@ Read these knowledge files now:
 <process>
 1. **Identify the recurring job.** Define the persona, task, triggering user language, expected answer shape, and why ad-hoc search is not enough.
 
-2. **Find the canonical working set.** Read the use-case page if one exists, the concept pages it depends on, source-index or article pages, relevant synthesis pages, and adjacent sibling pages.
+2. **Find the canonical working set.** Read the use-case page if one exists, the concept pages it depends on, source-index or source-section pages, relevant synthesis pages, and adjacent sibling pages.
 
-3. **Declare required context.** List required files with role and why, required source sections or article ids, related tags, related bundles, and optional context that should be fetched only if the question drifts.
+3. **Declare required context.** List required files with role and why, required source sections or source ids, related tags, related bundles, and optional context that should be fetched only if the question drifts.
 
 4. **Set freshness and status gates.** Define warn and stale thresholds, unacceptable statuses, stale-bundle behavior, and whether upstream source fetching is mandatory before answering.
 

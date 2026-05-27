@@ -18,7 +18,7 @@ sources:
   - title: Source title
     url: https://example.com/source
     accessed: YYYY-MM-DD
-    kind: primary | regulation | guidance | judgment | gov-page | secondary | internal
+    kind: primary | standard | guidance | decision | official-page | secondary | internal
 see_also:
   - ./related-file.md
 ---
@@ -27,7 +27,7 @@ see_also:
 Common extensions:
 
 - `as_of` and `expected_decay` for frontier pages.
-- `articles_covered`, `sections_covered`, `clauses_covered`, or `source_ids` for source-index pages.
+- `sections_covered`, `clauses_covered`, `records_covered`, or `source_ids` for source-index pages.
 - `persona` and `task` for use-case pages.
 - `owner`, `review_cycle_days`, or `risk_level` for enterprise corpora.
 - `last_verified_by` when human, agent, and hybrid verification must be distinguished.

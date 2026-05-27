@@ -19,7 +19,7 @@ Read these knowledge files now:
 
 5. **Bound parameters.** Validate paths, tags, status values, depth, dates, and source ids. Return "did you mean" or nearest valid values when possible.
 
-6. **Choose invocation surfaces deliberately.** Use in-process tools for code owned by the agent runtime. Use MCP or a CLI only when there is a real boundary: separate process, language, organization, human shell workflow, or third-party client.
+6. **Choose invocation surfaces deliberately.** Use in-process tools for code owned by the agent runtime. Use MCP or a CLI only when there is a real boundary: separate process, language, organization, human shell workflow, or third-party consumer.
 
 7. **Instrument behavior.** Log tool calls, wrong-tool retries, zero-result searches, stale reads, bundle misses, verifier rejects, and high-latency paths. Use logs to improve tools and bundles.
 </process>

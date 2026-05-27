@@ -14,15 +14,15 @@ Agent navigation should not depend on one mechanism. Use folders for editorial l
 A markdown link on its own line is structural:
 
 ```markdown
-### [Trusts](./trusts/index.md)
+### [Onboarding](./onboarding/index.md)
 
-- [Distribution decisions](./distribution-decisions.md) - when trustees can distribute assets.
+- [Approval workflow](./approval-workflow.md) - when a request needs review before completion.
 ```
 
 A markdown link inside prose is a cross-reference:
 
 ```markdown
-The decision depends on the [distribution authority](./distribution-decisions.md) and the governing instrument.
+The decision depends on the [approval workflow](./approval-workflow.md) and the current operating policy.
 ```
 
 Use inclusion links mainly in index pages, persona indexes, source indexes, and decision maps. Concept files usually use inline links and optional related lists.

@@ -14,7 +14,7 @@ Corpus tools are part of the knowledge system. Their descriptions, parameters, o
 Common corpus tools:
 
 - `getFile(path, depth, parentContext)`: read a known page and optionally structural children or parents.
-- `getBySourceId(source, id)`: resolve a known article, clause, endpoint, or record to its canonical page.
+- `getBySourceId(source, id)`: resolve a known section, clause, endpoint, or record to its canonical page.
 - `findByTag(tags, mode)`: deterministic closed-taxonomy retrieval.
 - `tree(path, depth)`: inspect structural inclusion links.
 - `neighbors(path)`: inspect see-also, tags, parents, siblings, and children.

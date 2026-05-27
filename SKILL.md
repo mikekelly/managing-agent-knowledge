@@ -1,12 +1,12 @@
 ---
 name: managing-agent-knowledge
-description: "MUST be loaded before designing, creating, reviewing, auditing, updating, or maintaining agent-readable knowledge systems, LLM wiki corpora, retrieval bundles, source-cited knowledge bases, or memory architectures. Use when you need to turn source material into durable agent knowledge, separate canonical knowledge from memory, define freshness and citation discipline, design corpus tools, or build retrieval contracts for agents."
+description: "MUST be loaded before designing, creating, reviewing, auditing, updating, or maintaining agent-readable knowledge systems, LLM wiki corpora, retrieval bundles, source-backed knowledge bases, or memory architectures. Use when you need to turn source material into durable agent knowledge, separate canonical knowledge from memory, define freshness and citation discipline, design corpus tools, or build retrieval contracts for agents."
 ---
 
 <objective>
 Manage agent-readable knowledge as a durable system: source material is compiled into a maintained corpus, the corpus is kept separate from agent memory, retrieval contracts define what enters context, and validation catches drift before users rely on stale or unsupported claims.
 
-Use this skill for domain-neutral knowledge systems: legal corpora, policy libraries, product knowledge, research wikis, enterprise procedure books, or any source-cited corpus an agent must read, maintain, cite, and traverse reliably.
+Use this skill for domain-neutral knowledge systems: policy libraries, product knowledge, technical manuals, research wikis, enterprise procedure books, or any source-backed corpus an agent must read, maintain, cite, and traverse reliably.
 </objective>
 
 <quick_start>
@@ -23,7 +23,7 @@ If the request already gives enough context, do not ask intake questions. Start 
 </quick_start>
 
 <essential_principles>
-**Canonical knowledge is not memory.** Canonical corpus content is externally sourced, versioned, and editorially maintained. Agent inferences, conversation summaries, and tenant/customer preferences never become canonical facts without an explicit source-backed editorial update.
+**Canonical knowledge is not memory.** Canonical corpus content is externally sourced, versioned, and editorially maintained. Agent inferences, conversation summaries, and project-specific preferences never become canonical facts without an explicit source-backed editorial update.
 
 **Source-first, compiled knowledge.** Keep raw sources as the authority. Compile them into concise, traversable Markdown knowledge pages with citations, dates, status, and links. Do not paste raw documents into the corpus as a substitute for synthesis.
 
@@ -35,7 +35,7 @@ If the request already gives enough context, do not ask intake questions. Start 
 
 **Navigation has multiple axes.** Folders say where editors work. Tags say what a file is about. Inclusion links say what context a file lives inside. Good agent retrieval needs all three.
 
-**Retrieval contracts beat accidental RAG.** For recurring persona-task work, predefine the required files, source articles/sections, tags, freshness window, refusal rules, and citation pattern. Let ad-hoc search handle the long tail.
+**Retrieval contracts beat accidental RAG.** For recurring persona-task work, predefine the required files, source sections, tags, freshness window, refusal rules, and citation pattern. Let ad-hoc search handle the long tail.
 
 **Verification is structural.** Important claims should be checked against cited sources by an audit step, verifier, test, or sub-agent with bounded authority. Self-reflection is not enough for high-stakes knowledge.
 
@@ -48,7 +48,7 @@ Ask only for gaps that materially affect the structure or authority model. Usefu
 - What domain and user jobs must this knowledge support?
 - Which sources are authoritative, and which are merely background?
 - Must agents cite every claim, or only high-impact claims?
-- Is this a single shared corpus, a per-tenant corpus, or shared canonical knowledge plus private memory?
+- Is this a single shared corpus, a workspace-specific corpus, or shared canonical knowledge plus private memory?
 - What outputs should exist when the work is done: corpus pages, conventions, bundle specs, audit reports, tools, or evals?
 </intake>
 
@@ -59,7 +59,7 @@ Use this routing map:
 - `add`, `update`, `compile`, `distill`, `ingest`, `write knowledge`, `refresh page`: read `workflows/add-or-update-knowledge.md`
 - `bundle`, `retrieval contract`, `persona`, `task`, `preload`, `context package`: read `workflows/build-retrieval-contracts.md`
 - `audit`, `review corpus`, `review knowledge`, `health`, `stale`, `broken links`, `citations`, `claim drift`, `gaps`: read `workflows/audit-knowledge-corpus.md`
-- `memory`, `tenant`, `private notes`, `canonical`, `procedural skill`, `episodic`, `semantic`: read `workflows/design-memory-boundaries.md`
+- `memory`, `workspace-specific`, `private notes`, `canonical`, `procedural skill`, `episodic`, `semantic`: read `workflows/design-memory-boundaries.md`
 - `tool`, `tool description`, `corpus API`, `MCP`, `SDK tool`, `output envelope`, `TOON`, `structured error`: read `workflows/design-knowledge-tools.md`
 
 After reading the workflow, follow it exactly. Load only the knowledge files listed in that workflow's required reading.
@@ -70,13 +70,13 @@ All reusable knowledge is in `knowledge/`:
 
 **Architecture:** `corpus-architecture.md`, `writing-patterns.md`, `memory-boundaries.md`
 **Metadata and retrieval:** `frontmatter-and-taxonomy.md`, `navigation-and-links.md`, `retrieval-contracts-and-bundles.md`
-**Trust and operations:** `source-and-freshness-discipline.md`, `stewardship-and-evals.md`, `tool-and-output-contracts.md`
+**Authority and operations:** `source-and-freshness-discipline.md`, `stewardship-and-evals.md`, `tool-and-output-contracts.md`
 </knowledge_index>
 
 <templates_index>
 Reusable output templates are in `templates/`:
 
-- `content-file.md`: source-cited corpus page template
+- `content-file.md`: source-backed corpus page template
 - `bundle.yaml`: persona-task retrieval contract template
 - `audit-report.md`: corpus health report template
 - `eval-scenarios.json`: lightweight behavioral eval template
@@ -102,7 +102,7 @@ Should trigger:
 
 Should not trigger:
 
-- "Summarize this article for a blog post" when no durable agent knowledge system is being created or maintained.
+- "Summarize this source document for a blog post" when no durable agent knowledge system is being created or maintained.
 </trigger_tests>
 
 <success_criteria>

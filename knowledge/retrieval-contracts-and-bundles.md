@@ -21,7 +21,7 @@ A useful bundle usually includes:
 - `task`: the operator-shaped job.
 - `trigger_description`: plain-English routing signal.
 - `required_files`: paths with role and why.
-- `required_source_sections`: source ids, clauses, articles, docs, APIs, or records the agent must be able to cite precisely.
+- `required_source_sections`: source ids, sections, clauses, docs, APIs, or records the agent must be able to cite precisely.
 - `related_tags`: closed-taxonomy tags to expand.
 - `related_bundles`: adjacent tasks for drift.
 - `freshness_warn_days` and `freshness_stale_days`.
@@ -34,7 +34,7 @@ A useful bundle usually includes:
 Use roles to make context selection auditable:
 
 - `canonical-concept`: the authoritative explanation.
-- `source-index`: maps source ids, articles, clauses, or endpoints to pages.
+- `source-index`: maps source ids, sections, clauses, or endpoints to pages.
 - `use-case-anchor`: operator-shaped task page.
 - `procedural-context`: how the user acts on the rule.
 - `synthesis-context`: comparison or decision surface.

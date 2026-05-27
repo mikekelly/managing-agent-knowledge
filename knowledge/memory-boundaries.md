@@ -7,7 +7,7 @@ Knowledge systems fail when canonical facts, private memory, and generated infer
 
 **Episodic memory:** session transcript or task history. Useful for continuity, not a source of truth.
 
-**Semantic/private memory:** tenant, user, customer, or project notes. Persistent and agent-writable under rules. Can influence retrieval and framing.
+**Semantic/private memory:** workspace, user, team, or project notes. Persistent and agent-writable under rules. Can influence retrieval and framing.
 
 **Procedural memory:** skills, prompts, workflows, and tools. Versioned instructions for how agents work.
 
@@ -31,10 +31,10 @@ Document this matrix before building memory tools.
 </authority_matrix>
 
 <contamination_controls>
-- Do not write tenant-specific facts into a shared corpus.
+- Do not write workspace-specific facts into a shared corpus.
 - Do not promote agent summaries to canonical knowledge without source review.
 - Do not let memory override a fresher or higher-tier source.
-- Do not cite private memory for high-stakes external facts unless the user explicitly asks for internal context.
+- Do not cite private memory for high-stakes external facts unless the user explicitly asks for workspace-local context.
 - Keep generated eval outputs and conversation logs out of canonical pages except as evidence for a backlog item.
 </contamination_controls>
 

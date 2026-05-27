@@ -11,7 +11,7 @@ Use only the layers the domain needs, but keep their roles distinct:
 - **History or trajectory layer:** stable retrospectives, milestones, bibliographies, and gap catalogues that explain how the domain reached its current shape.
 - **Use-case layer:** persona or operator pages that answer "what do I do?" and link back to canonical concept pages for authority.
 - **Procedural layer:** skills, prompts, workflows, and retrieval contracts that tell agents how to use the corpus.
-- **Private memory layer:** tenant, user, project, or session-specific facts. This layer can influence retrieval and framing but should not contaminate canonical knowledge.
+- **Private memory layer:** workspace, user, project, or session-specific facts. This layer can influence retrieval and framing but should not contaminate canonical knowledge.
 </core_layers>
 
 <file_model>
@@ -22,7 +22,7 @@ knowledge/
   index.md
   tags.md
   sources.md
-  <domain-or-tenant>/
+  <domain-or-collection>/
     index.md
     <section>/
       index.md
@@ -50,7 +50,7 @@ Parallel structure matters. If two domains share a concept, mirror paths where p
 <anti_patterns>
 - Dumping raw PDFs, transcripts, or scraped pages into `knowledge/` without synthesis.
 - Treating generated summaries as source-backed canonical pages.
-- Mixing tenant-private examples into shared canonical files.
+- Mixing workspace-specific examples into shared canonical files.
 - Writing a single giant handbook that agents must partially sample.
 - Creating many near-duplicate pages because no canonical home was chosen.
 - Designing only for human browsing and then expecting agents to retrieve reliably.

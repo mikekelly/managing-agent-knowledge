@@ -10,7 +10,7 @@ sources:
   - title: <Source title>
     url: https://example.com/source
     accessed: YYYY-MM-DD
-    kind: primary | regulation | guidance | judgment | gov-page | secondary | internal
+    kind: primary | standard | guidance | decision | official-page | secondary | internal
 see_also:
   - ./related-file.md
 ---
